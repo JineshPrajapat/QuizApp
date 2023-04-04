@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="startquizbox">
+        <h3>Quiz</h3>
+        <hr>
+        <div class="nameinfo">
+            <input type="text" id="playername" placeholder="Enter your name">
+            <button id="startquizbtn">Start Quiz</button>
+        </div>
+    </section>
+
+    <section class="quizbox">
+        <div class="head1">
+            <h5 id="name">Player</h5>
+            <h5 id="time">00:00</h5>
+        </div>
+        <hr>
+        <div class="head2">
+            <div class="question">
+                <h2 id="question">Question</h2>
+            </div>
+            <div class="option">
+                <input type="button" class="opt" value="a" id="a"></button>
+                <input type="button" class="opt" value="b" id="b"></button>
+                <input type="button" class="opt" value="c" id="c"></button>
+                <input type="button" class="opt" value="d" id="d"></button>
+            </div>
+        </div>
+        <hr>
+        <div class="head1">
+            <h5 id="questionNo">Question No. 0/0</h5>
+            <button id="nextbtn">Next</button>
+        </div>
+    </section>
+
+    <section class="restartquiz">
+        <h3 id="totalpoints">Total Points: 0</h3>
+        <button id="restartquizbtn">Restart Quiz</button>
+    </section>
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/style.js"></script>
+    <script type="text/javascript" src="js/question.js"></script>
+</body>
+
+</html>
